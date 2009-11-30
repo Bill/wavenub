@@ -17,9 +17,13 @@
       wavePanel.init(document.getElementById('waveframe'));
     }
     </script>
+    
+    <style>
+    #waveframe iframe { min-height: 600px; min-width: 800px;}
+    </style>
         
   </head>
   <body onload="initialize()">
-    <div id="waveframe" style="width: 500px; height: 100%"></div>
+    <div id="waveframe"></div>
   </body>
 </html>
