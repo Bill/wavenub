@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Wavenub</title>
+    
+    <script src="http://wave-api.appspot.com/public/embed.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    function initialize() {
+      var wavePanel = new WavePanel('http://wave.google.com/wave/');
+      wavePanel.loadWave('googlewave.com!w%252BNWohL6jfA');
+      wavePanel.init(document.getElementById('waveframe'));
+    }
+    </script>
+        
+  </head>
+  <body onload="initialize()">
+    <div id="waveframe" style="width: 500px; height: 100%"></div>
+  </body>
+</html>
