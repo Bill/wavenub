@@ -9,7 +9,11 @@
     <script type="text/javascript">
     function initialize() {
       var wavePanel = new WavePanel('http://wave.google.com/wave/');
-      wavePanel.loadWave('googlewave.com!w%252BNWohL6jfA');
+      // original Wave ID: googlewave.com!w%252BNWohL6jfA
+      // URL-escaping to: googlewave.com!w%2BNWohL6jfA doesn't seem to work.
+      // %25 is a percent sign %. %2B is a plus sign + which matches the documentation.
+      // Will this work:
+      wavePanel.loadWave('googlewave.com!w+NWohL6jfA');
       wavePanel.init(document.getElementById('waveframe'));
     }
     </script>
